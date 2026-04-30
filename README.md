@@ -49,7 +49,7 @@ Aplikasi ini adalah sistem pendaftaran seminar mahasiswa yang dikembangkan sebag
 
 Silakan klik link di bawah ini untuk melihat penjelasan detail mengenai alur aplikasi dan penjelasan potongan kode:
 
-👉 **[LINK VIDEO PENJELASAN DI SINI](https://drive.google.com/drive/u/1/folders/1RdvNYVjVFHxAJUGwN3LP_MYzju2VlphH)**
+👉 **[LINK VIDEO PENJELASAN DI SINI]([MASUKKAN_LINK_VIDEO_ANDA_DI_SINI])**
 
 *Video berisi: Penjelasan Login, Register, Halaman Utama, Form Pendaftaran, Validasi Real-time, Dialog Konfirmasi, dan Halaman Hasil.*
 
