@@ -1,4 +1,3 @@
-# UTS-Pemrograman-Mobile-I-Form-Login-Seminar
 # UTS Pendaftaran Seminar (Pradipta Yudha)
 
 Aplikasi ini adalah sistem pendaftaran seminar mahasiswa yang dikembangkan sebagai proyek UTS. Aplikasi ini mencakup alur lengkap dari pendaftaran akun, login, pengisian formulir seminar, hingga penampilan hasil pendaftaran.
