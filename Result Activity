@@ -1,0 +1,41 @@
+package com.pradipta.pendaftaranseminar
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class ResultActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_result)
+
+        val tvResNama = findViewById<TextView>(R.id.tvResNama)
+        val tvResEmail = findViewById<TextView>(R.id.tvResEmail)
+        val tvResPhone = findViewById<TextView>(R.id.tvResPhone)
+        val tvResGender = findViewById<TextView>(R.id.tvResGender)
+        val tvResSeminar = findViewById<TextView>(R.id.tvResSeminar)
+        val btnBackHome = findViewById<Button>(R.id.btnBackHome)
+
+        val nama = intent.getStringExtra("NAMA") ?: ""
+        val email = intent.getStringExtra("EMAIL") ?: ""
+        val phone = intent.getStringExtra("PHONE") ?: ""
+        val gender = intent.getStringExtra("GENDER") ?: ""
+        val seminar = intent.getStringExtra("SEMINAR") ?: ""
+
+        tvResNama.text = getString(R.string.label_nama, nama)
+        tvResEmail.text = getString(R.string.label_email, email)
+        tvResPhone.text = getString(R.string.label_phone, phone)
+        tvResGender.text = getString(R.string.label_gender, gender)
+        tvResSeminar.text = getString(R.string.label_seminar, seminar)
+
+        btnBackHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            startActivity(intent)
+            finish()
+        }
+    }
+}
